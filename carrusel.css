@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Tektur:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald&family=Tektur:wght@400;600&display=swap');
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+  }
+  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*MENU*/
+div#header{
+    background-color:#ffffff;
+    align-items: center;
+    align-content: center;
+    position: absolute; /*(o relative, según tu diseño)*/
+    top: 0px;
+    align-self:center;
+    left: 0px;
+    right: 0px;
+    justify-content: center;
+    width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+ul, ol {
+    list-style:none;
+}
+
+.nav > li {
+    float:left;
+}
+
+.nav li a {
+    font-family: 'Tektur', cursive;
+    color:#eb5c34;
+    text-decoration:none;
+    padding:20px 75px;
+    display:block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    
+}
+
+.nav li a:hover {
+    background-color:#b3adada4;
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+    /*min-width:140px;*/
+}
+
+.nav li:hover > ul {
+    display:block;
+}
+
+.nav li ul li {
+    position:relative;
+}
+
+.nav li ul li ul {
+    right:-140px;
+    top:0px;
+}
+
+.carrousel{
+    width: 750px;
+    height: 400px;
+    align-content: center;
+
+}
+
+.conteCarrousel{
+    width: 750px;
+    height: 400px;
+    overflow: hidden;
+    align-content: center;
+}
+
+.itemCarrousel{
+    position: relative;
+    width: 750px;
+    height: 400px;
+    align-items: center;
+}
+
+.itemCarrouselTarjeta{
+    width: 750px;
+    height: 400px;
+    align-items: center;
+    align-content: center;
+}
+
+.itemCarrouselArrows{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 750px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px; 
+}
+
+.itemCarrouselArrows > i:hover {
+    cursor: pointer;
+}
+
+#itemCarrousel-1{
+    background-color: rgba(226, 50, 50, 0);
+    align-content: center;
+}
+
+#itemCarrousel-2{
+    background-color: rgba(50, 200, 226, 0);
+    align-content: center;
+}
+
+#itemCarrousel-3{
+    background-color: rgba(200, 226, 50, 0);
+    align-content: center;
+}
+
+.conteCarrouselController{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.conteCarrouselController > a{
+    text-decoration: none;
+    font-size: 2em;
+    color: grey;
+}
+
+.itemCarrouselArrows > a > i{
+    color:#eb5c34;
+}

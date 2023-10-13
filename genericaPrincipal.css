@@ -1,0 +1,100 @@
+/*Fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Tektur:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald&family=Tektur:wght@400;600&display=swap');
+
+* {
+    margin:0px;
+    padding:0px;
+}
+
+
+html{
+    background-image: url(bcPrincipal.gif);
+    background-repeat: no-repeat;
+    background-size : cover;
+   /* background-position:-10px -120px;*/
+    background-color: black;
+    background-size: cover;
+    background-position: center center;
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    
+}
+
+h1{
+    font-family: 'Tektur', cursive;
+    font-size:75px;
+    color:rgb(191, 204, 181);
+    
+}
+
+h2{
+    font-size: xx-large;
+    color: black;
+}
+/*MENU*/
+div#header{
+    background-color:#04072e;
+    align-items: center;
+    align-content: center;
+    position: absolute; /*(o relative, según tu diseño)*/
+    top: 0px;
+    align-self:center;
+    left: 0px;
+    right: 0px;
+    justify-content: center;
+    width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+ul, ol {
+    list-style:none;
+}
+
+.nav > li {
+    float:left;
+}
+
+.nav li a {
+    background-color:#04072e;
+    color:white;
+    text-decoration:none;
+    padding:20px 75px;
+    display:block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    
+}
+
+.nav li a:hover {
+    background-color:#070b448c;
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+    /*min-width:140px;*/
+}
+
+.nav li:hover > ul {
+    display:block;
+}
+
+.nav li ul li {
+    position:relative;
+}
+
+.nav li ul li ul {
+    right:-140px;
+    top:0px;
+}

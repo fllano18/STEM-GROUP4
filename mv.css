@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Tektur:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald&family=Tektur:wght@400;600&display=swap');
+
+/*MENU*/
+div#header{
+    background-color:#ffffff;
+    align-items: center;
+    align-content: center;
+    position: absolute; /*(o relative, según tu diseño)*/
+    top: 0px;
+    align-self:center;
+    left: 0px;
+    right: 0px;
+    justify-content: center;
+    width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+ul, ol {
+    list-style:none;
+}
+
+.nav > li {
+    float:left;
+}
+
+.nav li a {
+    background-color:#ffffff;
+    font-family: 'Tektur', cursive;
+
+    color:#eb5c34;
+    text-decoration:none;
+    padding:20px 75px;
+    display:block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    
+}
+
+.nav li a:hover {
+    background-color:#b3adada4;;
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+    /*min-width:140px;*/
+}
+
+.nav li:hover > ul {
+    display:block;
+}
+
+.nav li ul li {
+    position:relative;
+}
+
+.nav li ul li ul {
+    right:-140px;
+    top:0px;
+}
+/*HERRAMIENTAS*/
+html{
+    background-color:#224156;
+}
+img#im1{
+    width:300px ;
+    height: 300px;
+    align-items: center;
+    float:left;
+    padding-left: 300px;
+   
+}
+img#im2{
+    width:300px ;
+    height: 300px;
+    align-items: center;
+    float: right;
+    padding-right: 300px;
+
+}
+h1{
+    text-align:center ;
+    color:#d4f0fc;
+    font-family: 'Oswald', sans-serif;
+    font-size: 35px;
+}
+p{
+    text-align:justify ;
+    color:#d4f0fc;
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+   
+
+}
+
+
+
+div#Mision {
+    justify-content: flex;
+    text-align:justify; 
+    width: 550px;
+    margin-left: 200px;
+}
+img{
+    width: 250px;
+    float:right;
+    margin-right: 300px;
+
+    
+}
